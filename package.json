@@ -1,0 +1,28 @@
+{
+  "name": "adventOfCode2022",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sandra Guerreiro <sandra.guerreiro-jacinto@energisme.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@jest/globals": "^29.3.1",
+    "@types/jest": "^29.2.3",
+    "@types/node": "^18.11.10",
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/index.js",
+    "test": "jest",
+    "addDay": "node ./addNewDay.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.0"
+  }
+}
