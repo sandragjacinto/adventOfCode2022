@@ -1,0 +1,16 @@
+{
+  "include": [
+    "src/**/*.ts"
+, "addNewDay.js"  ],  "exclude": [
+    "src/**/*/test.ts"
+  ],  "compilerOptions": {
+    "target": "ESNEXT",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
